@@ -1,0 +1,4 @@
+services:
+    infra.serializer.service:
+        class: Infrastructure\Service\SerializerService
+        arguments: ['@jms_serializer']
