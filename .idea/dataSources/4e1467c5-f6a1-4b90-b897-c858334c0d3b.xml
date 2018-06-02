@@ -912,44 +912,294 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="229" parent="3" name="oportunidade">
+    <table id="229" parent="3" name="candidato">
       <Engine>InnoDB</Engine>
       <Collation>utf8_unicode_ci</Collation>
     </table>
-    <column id="230" parent="229" name="id">
+    <table id="230" parent="3" name="candidato_experiencia_profissional">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_unicode_ci</Collation>
+    </table>
+    <table id="231" parent="3" name="candidato_habilidade_tecnica">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_unicode_ci</Collation>
+    </table>
+    <table id="232" parent="3" name="experiencia_prifissional">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_unicode_ci</Collation>
+    </table>
+    <table id="233" parent="3" name="habilidade_tecnica">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_unicode_ci</Collation>
+    </table>
+    <table id="234" parent="3" name="inscricao">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_unicode_ci</Collation>
+    </table>
+    <table id="235" parent="3" name="oportunidade">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_unicode_ci</Collation>
+    </table>
+    <column id="236" parent="229" name="id_candidato">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="231" parent="229" name="descricao">
+    <column id="237" parent="229" name="nome">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="232" parent="229" name="periodo_inicial">
+    <column id="238" parent="229" name="email">
       <Position>3</Position>
-      <DataType>datetime|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="233" parent="229" name="periodo_final">
+    <column id="239" parent="229" name="curriculo">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="240" parent="229" name="telefone">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="241" parent="229" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_candidato</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="242" parent="230" name="id_candidato">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="243" parent="230" name="id_experiencia_profissional">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="244" parent="230" name="IDX_28518E29A852DB7D">
+      <ColNames>id_candidato</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="245" parent="230" name="IDX_28518E29FE34A02D">
+      <ColNames>id_experiencia_profissional</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="246" parent="230" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_candidato
+id_experiencia_profissional</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="247" parent="230" name="FK_28518E29A852DB7D">
+      <ColNames>id_candidato</ColNames>
+      <RefSchemaName>inscricao_emprego</RefSchemaName>
+      <RefTableName>candidato</RefTableName>
+      <RefColNames>id_candidato</RefColNames>
+    </foreign-key>
+    <foreign-key id="248" parent="230" name="FK_28518E29FE34A02D">
+      <ColNames>id_experiencia_profissional</ColNames>
+      <RefSchemaName>inscricao_emprego</RefSchemaName>
+      <RefTableName>experiencia_prifissional</RefTableName>
+      <RefColNames>id_experiencia_profissional</RefColNames>
+    </foreign-key>
+    <column id="249" parent="231" name="id_candidato">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="250" parent="231" name="id_habilidade_tecnica">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="251" parent="231" name="IDX_FAE06620A852DB7D">
+      <ColNames>id_candidato</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="252" parent="231" name="IDX_FAE06620CBE55254">
+      <ColNames>id_habilidade_tecnica</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="253" parent="231" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_candidato
+id_habilidade_tecnica</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="254" parent="231" name="FK_FAE06620A852DB7D">
+      <ColNames>id_candidato</ColNames>
+      <RefSchemaName>inscricao_emprego</RefSchemaName>
+      <RefTableName>candidato</RefTableName>
+      <RefColNames>id_candidato</RefColNames>
+    </foreign-key>
+    <foreign-key id="255" parent="231" name="FK_FAE06620CBE55254">
+      <ColNames>id_habilidade_tecnica</ColNames>
+      <RefSchemaName>inscricao_emprego</RefSchemaName>
+      <RefTableName>habilidade_tecnica</RefTableName>
+      <RefColNames>id_habilidade_tecnica</RefColNames>
+    </foreign-key>
+    <column id="256" parent="232" name="id_experiencia_profissional">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="257" parent="232" name="cargo">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="258" parent="232" name="descricao">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="259" parent="232" name="periodo_inicial">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="234" parent="229" name="qtd_vagas">
+    <column id="260" parent="232" name="periodo_final">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="261" parent="232" name="is_trabalho_atual">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="262" parent="232" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_experiencia_profissional</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="263" parent="233" name="id_habilidade_tecnica">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="233" name="descricao">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="265" parent="233" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_habilidade_tecnica</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="266" parent="234" name="id_inscricao">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="267" parent="234" name="id_candidato">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="268" parent="234" name="id_oportunidade">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="269" parent="234" name="codigo_confirmacao">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="270" parent="234" name="is_ativa">
+      <Position>5</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="271" parent="234" name="IDX_AE0E7EEAA852DB7D">
+      <ColNames>id_candidato</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="272" parent="234" name="IDX_AE0E7EEAF3C747FE">
+      <ColNames>id_oportunidade</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="273" parent="234" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_inscricao</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="274" parent="234" name="FK_AE0E7EEAA852DB7D">
+      <ColNames>id_candidato</ColNames>
+      <RefSchemaName>inscricao_emprego</RefSchemaName>
+      <RefTableName>candidato</RefTableName>
+      <RefColNames>id_candidato</RefColNames>
+    </foreign-key>
+    <foreign-key id="275" parent="234" name="FK_AE0E7EEAF3C747FE">
+      <ColNames>id_oportunidade</ColNames>
+      <RefSchemaName>inscricao_emprego</RefSchemaName>
+      <RefTableName>oportunidade</RefTableName>
+      <RefColNames>id_oportunidade</RefColNames>
+    </foreign-key>
+    <column id="276" parent="235" name="id_oportunidade">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="277" parent="235" name="descricao">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="278" parent="235" name="periodo_inicial">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="279" parent="235" name="periodo_final">
+      <Position>4</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="280" parent="235" name="qtd_vagas">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="235" parent="229" name="PRIMARY">
+    <key id="281" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>id_oportunidade</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

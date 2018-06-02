@@ -1,0 +1,5 @@
+<serializer>
+    <class name="Domain\Model\HabilidadeTecnica">
+        <propety name="descricao" type="string" groups="default"/>
+    </class>
+</serializer>

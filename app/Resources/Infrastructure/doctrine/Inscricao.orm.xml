@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping">
+    <entity name="Domain\Model\Inscricao"
+            table="inscricao">
+        <id name="idInscricao" type="integer" column="id_inscricao">
+            <generator strategy="AUTO"/>
+        </id>
+
+        <field name="codigoConfirmacao" type="string" column="codigo_confirmacao" />
+        <field name="ativa" type="boolean" column="is_ativa" />
+
+        <many-to-one target-entity="Domain\Model\Candidato" field="candidato">
+            <join-column name="id_candidato" referenced-column-name="id_candidato" />
+        </many-to-one>
+
+        <many-to-one target-entity="Domain\Model\Oportunidade" field="oportunidade">
+            <join-column name="id_oportunidade" referenced-column-name="id_oportunidade" />
+        </many-to-one>
+    </entity>
+</doctrine-mapping>

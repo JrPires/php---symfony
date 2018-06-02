@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping">
+    <entity name="Domain\Model\ExperienciaProfissional"
+            table="experiencia_prifissional">
+        <id name="idExperienciaProfissional" type="integer" column="id_experiencia_profissional">
+            <generator strategy="AUTO"/>
+        </id>
+
+        <field name="cargo" type="string" column="cargo"/>
+        <field name="descricao" type="string" column="descricao"/>
+        <field name="periodoInicial" type="datetime" column="periodo_inicial"/>
+        <field name="periodoFinal" type="datetime" column="periodo_final"/>
+        <field name="trabalhoAtual" type="boolean" column="is_trabalho_atual"/>
+    </entity>
+</doctrine-mapping>

@@ -1,0 +1,7 @@
+<?xml version='1.0' enconding="UTF-8" ?>
+<serializer>
+    <class name="Domain\Model\Inscricao">
+        <propety name="candidato" type="Domain\Model\Candidato" groups="default"/>
+        <propety name="oportunidade" type="Domain\Model\Oportunidade" groups="default"/>
+    </class>
+</serializer>
