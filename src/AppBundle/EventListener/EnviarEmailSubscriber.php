@@ -50,6 +50,6 @@ class EnviarEmailSubscriber implements EventSubscriberInterface
     public function onInscricao(InscricaoEvent $inscricaoEvent)
     {
         $inscricao = $inscricaoEvent->getInscricao();
-
+        $this->emailService->enviarNotificacaoInscricao($inscricao);
     }
 }
