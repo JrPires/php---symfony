@@ -75,6 +75,14 @@ class Oportunidade
         return $this->periodoFinal;
     }
 
+    /**
+     * @return id
+     */
+    public function getIdOportunidade()
+    {
+        return $this->idOportunidade;
+    }
+
 
 
 

@@ -35,6 +35,8 @@ class Candidato
 
     private $curriculo;
 
+    private $cpf;
+
     /**
      * @var collection
      */
@@ -44,6 +46,14 @@ class Candidato
      * @var collection
      */
     private $experienciasProficionais;
+
+    /**
+     * @return string
+     */
+    public function getCpf()
+    {
+        return $this->cpf;
+    }
 
 
 }

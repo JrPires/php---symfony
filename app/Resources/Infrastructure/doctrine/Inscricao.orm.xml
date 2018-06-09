@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping">
+   <repository class="Domain\Repository\InscricaoRepositoryInterface"/>
+
     <entity name="Domain\Model\Inscricao"
             table="inscricao">
         <id name="idInscricao" type="integer" column="id_inscricao">

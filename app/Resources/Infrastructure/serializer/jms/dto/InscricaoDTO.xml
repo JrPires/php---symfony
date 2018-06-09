@@ -1,7 +1,8 @@
-<?xml version='1.0' enconding="UTF-8" ?>
 <serializer>
-    <class name="Domain\Model\Inscricao">
+    <class name="Presentation\DataTransferObject\InscricaoDTO">
+
         <property name="candidato" type="Domain\Model\Candidato" groups="default"/>
         <property name="oportunidade" type="Domain\Model\Oportunidade" groups="default"/>
     </class>
 </serializer>
+

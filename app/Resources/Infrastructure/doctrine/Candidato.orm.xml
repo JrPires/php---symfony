@@ -9,6 +9,7 @@
         <field name="nome" type="string" column="nome"/>
         <field name="email" type="string" column="email"/>
         <field name="curriculo" type="string" column="curriculo"/>
+        <field name="cpf" type="string" column="cpf"/>
         <field name="telefone" type="string" column="telefone"/>
 
         <many-to-many target-entity="Domain\Model\HabilidadeTecnica" field="habilidadesTecnicas">

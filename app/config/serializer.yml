@@ -9,3 +9,13 @@ jms_serializer:
             DomainModel:
                 namespace_prefix: Domain\Model
                 path: '%kernel.root_dir%/Resources/Infrastructure/serializer/jms'
+            DataTransferObject:
+                   namespace_prefix: Presentation\DataTransferObject
+                   path: '%kernel.root_dir%/Resources/Infrastructure/serializer/jms/dto'
+services:
+
+    relation_handler:
+        class: Infrastructure\Serializer\RelationsHandler
+        arguments: ["@doctrine.orm.entity_manager"]
+        tags:
+            - {name: "jms_serializer.handler", type: Domain\Model\Oportunidade, direction: "deserialization", format: "json", method: "serializerRelations"}

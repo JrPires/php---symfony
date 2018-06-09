@@ -1,0 +1,6 @@
+services:
+    app.send-email.subscriber:
+        class: AppBundle\EventListener\EnviarEmailSubscriber
+        tags:
+            - { name: kernel.event_subscriber }
+        arguments: ['@infra.email.service']

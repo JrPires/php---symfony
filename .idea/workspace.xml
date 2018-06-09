@@ -2,26 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eafb5a65-8749-48b5-89ad-59009533cfc2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Candidato.orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/ExperienciaProfissional.orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/HabilidadeTecnica.orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Inscricao.orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Candidato.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/ExpericenciaProfissional.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/HabilidadeTecnica.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Incricao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Controller/InscricaoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Model/Candidato.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Model/ExperienciaProfissional.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Model/HabilidadeTecnica.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Model/Inscricao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e1467c5-f6a1-4b90-b897-c858334c0d3b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e1467c5-f6a1-4b90-b897-c858334c0d3b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/dto/InscricaoDTO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/events.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Event/InscricaoEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/EventListener/EnviarEmailSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Service/EventDispatcherService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Service/InscricaoService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Repository/InscricaoRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Service/InscricaoServiceInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Doctrine/InscricaoRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Serializer/RelationsHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Service/EmailService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Presentation/DataTransferObject/InscricaoDTO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Oportunidade.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Oportunidade.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/OportunidadeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/OportunidadeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/OportunidadeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/OportunidadeService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Service/OportunidadeServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Service/OportunidadeServiceInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Service/SerializerService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Service/SerializerService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Candidato.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Candidato.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Inscricao.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Inscricao.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Candidato.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Candidato.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/ExpericenciaProfissional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/ExpericenciaProfissional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/HabilidadeTecnica.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/HabilidadeTecnica.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Incricao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Incricao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/repositories.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/repositories.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/serializer.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/serializer.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services-infrastructure.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services-infrastructure.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/InscricaoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/InscricaoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Model/Candidato.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Model/Candidato.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Model/Inscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Model/Inscricao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Model/Oportunidade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Model/Oportunidade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,35 +77,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InscricaoController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/InscricaoController.php">
+      <file leaf-file-name="EnviarEmailSubscriber.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/EventListener/EnviarEmailSubscriber.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="201">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
-                <element signature="e#132#159#0#PHP" expanded="true" />
+                <element signature="e#135#170#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SerializerService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Infrastructure/Service/SerializerService.php">
+      <file leaf-file-name="events.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/events.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InscricaoService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/InscricaoService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="53" column="76" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
               <folding>
-                <element signature="e#134#174#0#PHP" expanded="true" />
+                <element signature="e#37#64#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Inscricao.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Domain/Model/Inscricao.php">
+      <file leaf-file-name="Inscricao.orm.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Inscricao.orm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+            <state relative-caret-position="34">
+              <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InscricaoRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Infrastructure/Persistence/Doctrine/InscricaoRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+              <folding>
+                <element signature="e#147#181#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,7 +141,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/services-infrastructure.yml" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Oportunidade.xml" />
@@ -120,29 +148,42 @@
         <option value="$PROJECT_DIR$/src/Domain/Repository/OportunidadeRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/src/Infrastructure/Persistence/Doctrine/OportunidadeRepository.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
-        <option value="$PROJECT_DIR$/app/config/services-application.yml" />
-        <option value="$PROJECT_DIR$/app/config/repositories.yml" />
-        <option value="$PROJECT_DIR$/app/config/serializer.yml" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/Domain/Model/Oportunidade.php" />
         <option value="$PROJECT_DIR$/src/Domain/Service/OportunidadeServiceInterface.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/OportunidadeService.php" />
         <option value="$PROJECT_DIR$/src/Infrastructure/Service/SerializerService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/OportunidadeController.php" />
-        <option value="$PROJECT_DIR$/src/Domain/Model/Candidato.php" />
         <option value="$PROJECT_DIR$/src/Domain/Model/HabilidadeTecnica.php" />
         <option value="$PROJECT_DIR$/src/Domain/Model/ExperienciaProfissional.php" />
         <option value="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/HabilidadeTecnica.orm.xml" />
         <option value="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/ExperienciaProfissional.orm.xml" />
-        <option value="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Candidato.orm.xml" />
-        <option value="$PROJECT_DIR$/src/Domain/Model/Inscricao.php" />
         <option value="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Oportunidade.orm.xml" />
-        <option value="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Inscricao.orm.xml" />
-        <option value="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Incricao.xml" />
+        <option value="$PROJECT_DIR$/src/Presentation/DataTransferObject/InscricaoDTO.php" />
+        <option value="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/dto/InscricaoDTO.xml" />
         <option value="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Candidato.xml" />
-        <option value="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/HabilidadeTecnica.xml" />
         <option value="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/ExpericenciaProfissional.xml" />
+        <option value="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/HabilidadeTecnica.xml" />
+        <option value="$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Incricao.xml" />
+        <option value="$PROJECT_DIR$/src/Infrastructure/Serializer/RelationsHandler.php" />
+        <option value="$PROJECT_DIR$/app/config/serializer.yml" />
+        <option value="$PROJECT_DIR$/src/Domain/Service/InscricaoServiceInterface.php" />
+        <option value="$PROJECT_DIR$/src/Domain/Repository/InscricaoRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/config/repositories.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/InscricaoController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Candidato.orm.xml" />
+        <option value="$PROJECT_DIR$/src/Domain/Model/Oportunidade.php" />
+        <option value="$PROJECT_DIR$/src/Domain/Model/Inscricao.php" />
+        <option value="$PROJECT_DIR$/src/Domain/Model/Candidato.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Event/InscricaoEvent.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Service/EventDispatcherService.php" />
+        <option value="$PROJECT_DIR$/src/Infrastructure/Service/EmailService.php" />
+        <option value="$PROJECT_DIR$/app/config/services-infrastructure.yml" />
+        <option value="$PROJECT_DIR$/app/config/events.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Service/InscricaoService.php" />
+        <option value="$PROJECT_DIR$/src/Infrastructure/Persistence/Doctrine/InscricaoRepository.php" />
+        <option value="$PROJECT_DIR$/app/config/services-application.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/EventListener/EnviarEmailSubscriber.php" />
+        <option value="$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Inscricao.orm.xml" />
       </list>
     </option>
   </component>
@@ -204,7 +245,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="16" />
+    <option name="x" value="636" />
+    <option name="y" value="22" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -216,6 +258,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,6 +270,12 @@
               <item name="inscricao-emprego-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="inscricao-emprego-api" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inscricao-emprego-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inscricao-emprego-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="inscricao-emprego-api" type="b2602c69:ProjectViewProjectNode" />
@@ -256,13 +305,6 @@
               <item name="inscricao-emprego-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="inscricao-emprego-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inscricao-emprego-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inscricao-emprego-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -270,7 +312,20 @@
               <item name="inscricao-emprego-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Domain" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inscricao-emprego-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inscricao-emprego-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Infrastructure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inscricao-emprego-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inscricao-emprego-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Infrastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="inscricao-emprego-api" type="b2602c69:ProjectViewProjectNode" />
@@ -281,11 +336,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="In&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Domain/Model/Inscricao.php&#10;seri&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Infrastructure/Service/SerializerService.php&#10;seria&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Infrastructure/Service/SerializerService.php&#10;seriali&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Infrastructure/Service/SerializerService.php&#10;opo&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Domain/Service/OportunidadeServiceInterface.php&#10;oportunidade&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/AppBundle/Service/OportunidadeService.php&#10;op&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/AppBundle/Controller/OportunidadeController.php&#10;opor&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Domain/Model/Oportunidade.php&#10;Opo&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/app/Resources/Infrastructure/serializer/jms/Oportunidade.xml&#10;ArrayNode.php&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/vendor/symfony/symfony/src/Symfony/Component/Config/Definition/ArrayNode.php" />
+    <property name="SearchEverywhereHistoryKey" value="enviar&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/AppBundle/EventListener/EnviarEmailSubscriber.php&#10;ins&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Infrastructure/Persistence/Doctrine/InscricaoRepository.php&#10;in&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/AppBundle/Service/InscricaoService.php&#10;en&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/AppBundle/Service/EventDispatcherService.php&#10;Ins&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/AppBundle/Controller/InscricaoController.php&#10;In&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Domain/Model/Inscricao.php&#10;seri&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Infrastructure/Service/SerializerService.php&#10;seria&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Infrastructure/Service/SerializerService.php&#10;seriali&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Infrastructure/Service/SerializerService.php&#10;opo&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Domain/Service/OportunidadeServiceInterface.php&#10;oportunidade&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/AppBundle/Service/OportunidadeService.php&#10;op&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/AppBundle/Controller/OportunidadeController.php&#10;opor&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/src/Domain/Model/Oportunidade.php&#10;Opo&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/app/Resources/Infrastructure/serializer/jms/Oportunidade.xml&#10;ArrayNode.php&#9;FILE&#9;file://C:/Users/lab05usuario32/Projetos_iesp/inscricao-emprego-api/vendor/symfony/symfony/src/Symfony/Component/Config/Definition/ArrayNode.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -319,37 +373,71 @@
       <workItem from="1526144552455" duration="10405000" />
       <workItem from="1526728255641" duration="23161000" />
       <workItem from="1527938006087" duration="1566000" />
-      <workItem from="1527940154876" duration="19931000" />
+      <workItem from="1527940154876" duration="20553000" />
+      <workItem from="1528543053812" duration="16438000" />
+      <workItem from="1528570109588" duration="1797000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1527967187181</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527967187182</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55063000" />
+    <option name="totallyTimeSpent" value="73920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49763033" visible="true" weight="0.24357034" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5015129" side_tool="true" weight="0.27887788" />
+      <window_info anchor="right" id="Database" order="3" weight="0.24054463" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49848714" visible="true" weight="0.2590759" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49763033" visible="true" weight="0.23071104" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.24054463" />
       <window_info id="Structure" order="1" sideWeight="0.50236964" side_tool="true" weight="0.24963397" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49848714" visible="true" weight="0.39273927" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32838285" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31518152" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32838285" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32838285" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49763033" visible="true" weight="0.2344932" />
+      <window_info id="Structure" order="1" sideWeight="0.50236964" side_tool="true" weight="0.24963397" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31518152" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.24054463" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49848714" visible="true" weight="0.17821783" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.27887788" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32838285" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -357,87 +445,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/services-infrastructure.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/OportunidadeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#133#163#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4e1467c5-f6a1-4b90-b897-c858334c0d3b/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/src/JMS/Serializer/Serializer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3132">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="85" selection-start-line="18" selection-start-column="85" selection-end-line="18" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Config/Definition/ArrayNode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4913">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/OportunidadeServiceInterface.php" />
-    <entry file="file://$PROJECT_DIR$/app/config/repositories.ylm" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4e1467c5-f6a1-4b90-b897-c858334c0d3b/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4e1467c5-f6a1-4b90-b897-c858334c0d3b/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8150a5b0-9cf8-47de-9ecf-dd3e17898c52/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -471,59 +483,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/serializer.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/repositories.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Oportunidade.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e1467c5-f6a1-4b90-b897-c858334c0d3b/schema/inscricao_emprego/table/oportunidade">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services-application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services-infrastructure.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/Model/Oportunidade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -541,23 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="75" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/OportunidadeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#133#163#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Domain/Model/HabilidadeTecnica.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -569,13 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/Model/Candidato.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -600,31 +539,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Incricao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="85" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Candidato.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/HabilidadeTecnica.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/ExpericenciaProfissional.xml">
+    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Oportunidade.orm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -635,51 +553,262 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Inscricao.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+    <entry file="das://4e1467c5-f6a1-4b90-b897-c858334c0d3b/schema/inscricao_emprego/table/inscricao">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Candidato.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+    <entry file="das://4e1467c5-f6a1-4b90-b897-c858334c0d3b/schema/inscricao_emprego/table/oportunidade">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Oportunidade.orm.xml">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/OportunidadeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+        <state relative-caret-position="-400">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/InscricaoController.php">
+    <entry file="file://$PROJECT_DIR$/src/Presentation/DataTransferObject/InscricaoDTO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state relative-caret-position="167">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding>
-            <element signature="e#132#159#0#PHP" expanded="true" />
+            <element signature="e#143#170#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Infrastructure/Service/SerializerService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        <state relative-caret-position="126">
+          <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="48" />
           <folding>
             <element signature="e#134#174#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/dto/InscricaoDTO.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/ExpericenciaProfissional.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/HabilidadeTecnica.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Incricao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Oportunidade.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Infrastructure/Serializer/RelationsHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="e#137#168#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/serializer.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="20" column="126" selection-start-line="20" selection-start-column="126" selection-end-line="20" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Repository/InscricaoRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/InscricaoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding>
+            <element signature="e#132#159#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/repositories.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Service/InscricaoServiceInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/serializer/jms/Candidato.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Candidato.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Model/Candidato.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Model/Oportunidade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/EventDispatcher.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventSubscriberInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Event/InscricaoEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#127#154#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/EventDispatcherService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#129#164#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Domain/Model/Inscricao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="320">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Infrastructure/Service/EmailService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/InscricaoService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="53" column="76" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
+          <folding>
+            <element signature="e#37#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/events.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services-application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services-infrastructure.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Infrastructure/Persistence/Doctrine/InscricaoRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+          <folding>
+            <element signature="e#147#181#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/EventListener/EnviarEmailSubscriber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#135#170#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/Infrastructure/doctrine/Inscricao.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
         </state>
       </provider>
     </entry>
